@@ -1,0 +1,101 @@
+{
+	"id": "3a8e7fb2-0fa2-4e30-b411-27049c901c09",
+	"name": "siswa",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"ee88eff3-c96b-4374-89cc-ba4aefc23da0",
+		"7c22528d-2a5b-4d5b-851f-e833772ccaeb",
+		"ed44cd7b-7d63-402f-bb92-e052dae5fbfd",
+		"506bffd7-9de8-48b5-88e3-5c0f64b005f9"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "506bffd7-9de8-48b5-88e3-5c0f64b005f9",
+			"name": "delete siswa",
+			"url": "http://127.0.0.1:8000/api/siswa/7887",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "7c22528d-2a5b-4d5b-851f-e833772ccaeb",
+			"name": "tampil siswa",
+			"url": "http://127.0.0.1:8000/api/siswa",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "ed44cd7b-7d63-402f-bb92-e052dae5fbfd",
+			"name": "update siswa",
+			"url": "http://127.0.0.1:8000/api/siswa/90",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"nis\":\"90\",\n\t\"nama_siswa\":\"asd\",\n\t\"alamat\":\"ff\",\n\t\"no_hp\":\"4545454\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ee88eff3-c96b-4374-89cc-ba4aefc23da0",
+			"name": "insert siswa",
+			"url": "http://127.0.0.1:8000/api/siswa\n",
+			"description": "hhghghg",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"nis\":\"12333\",\n\t\"nama_siswa\":\"aaaa\",\n\t\"alamat\":\"dfdfdfdfdf\",\n\t\"no_hp\":\"43553534\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
