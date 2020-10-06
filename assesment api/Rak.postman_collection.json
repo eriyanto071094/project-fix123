@@ -1,0 +1,116 @@
+{
+	"id": "37c005f2-7043-4cb7-8ba4-1082125a459a",
+	"name": "Rak",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f8a100d6-b455-4233-9cb5-e02b34f3fb78",
+		"a52ddc40-de3d-452d-8400-b61c35270efe",
+		"b0886769-fe47-4414-bd82-f87ebbc5e983",
+		"0cc7def3-0027-47f2-8940-0d06d49dba7f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0cc7def3-0027-47f2-8940-0d06d49dba7f",
+			"name": "Delete Rak",
+			"url": "http://127.0.0.1:8000/api/rak/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a52ddc40-de3d-452d-8400-b61c35270efe",
+			"name": "Insert Rak",
+			"url": "http://127.0.0.1:8000/api/rak",
+			"description": "",
+			"data": [
+				{
+					"key": "nama_rak",
+					"value": "rak sepatu",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b0886769-fe47-4414-bd82-f87ebbc5e983",
+			"name": "Update Rak",
+			"url": "http://127.0.0.1:8000/api/rak/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"nama_rak\":\"sepatu\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f8a100d6-b455-4233-9cb5-e02b34f3fb78",
+			"name": "View Rak",
+			"url": "http://127.0.0.1:8000/api/rak",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

@@ -1,0 +1,144 @@
+{
+	"id": "e3a2487b-ac6a-4925-b4c1-e56b143254e6",
+	"name": "Book",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"f64276b5-ee88-44ec-b004-9b22314e8311",
+		"f8e48a0d-d930-4dad-826d-6815f11cd89b",
+		"f4d16ba6-b8b9-4430-989b-c76f5aa25e62",
+		"8bdd53d8-d373-48e2-be57-55631693e274"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "8bdd53d8-d373-48e2-be57-55631693e274",
+			"name": "Delete Book",
+			"url": "http://127.0.0.1:8000/api/book/5",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "f4d16ba6-b8b9-4430-989b-c76f5aa25e62",
+			"name": "Update Book",
+			"url": "http://127.0.0.1:8000/api/book/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"isbn\":\"111\",\n\t\"title\":\"konan\",\n\t\"author\":\"siti\",\n\t\"total_page\":\"236\",\n\t\"categories\":\"drama\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f64276b5-ee88-44ec-b004-9b22314e8311",
+			"name": "View Book",
+			"url": "http://127.0.0.1:8000/api/book",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f8e48a0d-d930-4dad-826d-6815f11cd89b",
+			"name": "Insert Book",
+			"url": "http://127.0.0.1:8000/api/book",
+			"description": "",
+			"data": [
+				{
+					"key": "isbn",
+					"value": "111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "konan",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "author",
+					"value": "eriyanto",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "total_page",
+					"value": "236",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categories",
+					"value": "drama",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

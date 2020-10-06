@@ -1,0 +1,123 @@
+{
+	"id": "c9f70ff0-8bf3-4ab0-a3f1-42ace52e55d1",
+	"name": "Category",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"4e47954a-4876-442a-8b79-c9f577350265",
+		"258fcc40-9456-4b94-8303-8b2cf411dab3",
+		"a9154d02-bebe-4256-add4-ad2a7ac0c19d",
+		"0ee62b4b-a8a9-400f-a553-ae660051e38f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0ee62b4b-a8a9-400f-a553-ae660051e38f",
+			"name": "Delete Category",
+			"url": "http://127.0.0.1:8000/api/category/1",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "258fcc40-9456-4b94-8303-8b2cf411dab3",
+			"name": "Insert Category",
+			"url": "http://127.0.0.1:8000/api/category",
+			"description": "",
+			"data": [
+				{
+					"key": "nama_category",
+					"value": "war",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4e47954a-4876-442a-8b79-c9f577350265",
+			"name": "View Category",
+			"url": "http://127.0.0.1:8000/api/category",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Authorization: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a9154d02-bebe-4256-add4-ad2a7ac0c19d",
+			"name": "Update Category",
+			"url": "http://127.0.0.1:8000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"nama_category\":\"romance\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
